@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 import { TodoModel } from 'app/models';
 
 export interface RootState {
   todos: RootState.TodoState;
-  router?: any;
+  router?: unknown;
 }
 
 export namespace RootState {

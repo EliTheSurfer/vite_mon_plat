@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { Store, createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { RootState, rootReducer } from 'app/reducers';
@@ -10,7 +11,7 @@ export function configureStore(initialState?: RootState): Store<RootState> {
     middleware = composeWithDevTools(middleware);
   }
 
-  const store = createStore(rootReducer as any, initialState as any, middleware) as Store<RootState>;
+  const store = createStore(rootReducer, initialState, middleware) as Store<RootState>;
 
   if (module.hot) {
     module.hot.accept('app/reducers', () => {

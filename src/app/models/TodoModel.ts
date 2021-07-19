@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /** TodoMVC model definitions **/
 
 export interface TodoModel {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 import { useMemo } from 'react';
 import { Dispatch, bindActionCreators } from 'redux';
 import { createAction } from 'redux-actions';
